@@ -6,18 +6,170 @@ nav#nav1{ margin-top: 24px; }
 nav#nav1 > a{ background:#B9E1FF; color:#000; padding:10px; text-decoration:none; border-radius:5px; font-family:"Arial Black", Gadget, sans-serif; }
 nav#nav1 > a:hover{ background: #BBEA00; }
 nav#nav1 > a:active{ background: #EEFFA8; }
+
+
+
+html {
+	margin: auto;
+    display: table;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.wrapper {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 15px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+}
+
+.box:hover { background: #BBEA00; }
+.box:active { background: #EEFFA8; }
+
 </style>
+
+
 <script>
-var bleep = new Audio();
-bleep.src = 'sounds/ket.mp3';
+var ket = new Audio();
+ket.src = 'sounds/ket.mp3';
+
+var belter = new Audio();
+belter.src = 'sounds/belter.mp3';
+
+var susan = new Audio();
+susan.src = 'sounds/susan.mp3';
+
+var biggie = new Audio();
+biggie.src = 'sounds/biggie.mp3';
+
+var biggie_shag = new Audio();
+biggie_shag.src = 'sounds/biggie_shag.mp3';
+
+var bludclat_breakfast = new Audio();
+bludclat_breakfast.src = 'sounds/bludclat_breakfast.mp3';
+
+var chubs_out = new Audio();
+chubs_out.src = 'sounds/chubs_out.mp3';
+
+var cmon = new Audio();
+cmon.src = 'sounds/cmon.mp3';
+
+var fack_off = new Audio();
+fack_off.src = 'sounds/fack_off.mp3';
+
+var hahahaa  = new Audio();
+hahahaa.src = 'sounds/hahahaa.mp3';
+
+var heuuheuheuheu = new Audio();
+heuuheuheuheu.src = 'sounds/heuuheuheuheu.mp3';
+
+var jhus = new Audio();
+jhus.src = 'sounds/jhus.mp3';
+
+var ket = new Audio();
+ket.src = 'sounds/ket.mp3';
+
+var lost_in_music = new Audio();
+lost_in_music.src = 'sounds/lost_in_music.mp3';
+
+var my_g = new Audio();
+my_g.src = 'sounds/my_g.mp3';
+
+var my_tits = new Audio();
+my_tits.src = 'sounds/my_tits.mp3';
+
+var neeow = new Audio();
+neeow.src = 'sounds/neeow.mp3';
+
+var nice_one = new Audio();
+nice_one.src = 'sounds/nice_one.mp3';
+
+var oh_my_days = new Audio();
+oh_my_days.src = 'sounds/oh_my_days.mp3';
+
+var oh_my_god = new Audio();
+oh_my_god.src = 'sounds/oh_my_god.mp3';
+
+var rap = new Audio();
+rap.src = 'sounds/rap.mp3';
+
+var thanks_mate = new Audio();
+thanks_mate.src = 'sounds/thanks_mate.mp3';
+
+var the_streets = new Audio();
+the_streets.src = 'sounds/the_streets.mp3';
+
+var thirsty_thursdays = new Audio();
+thirsty_thursdays.src = 'sounds/thirsty_thursdays.mp3';
+
+var wadupp = new Audio();
+wadupp.src = 'sounds/wadupp.mp3';
+
+var wagwarn = new Audio();
+wagwarn.src = 'sounds/wagwarn.mp3';
+
+var yes_noi = new Audio();
+yes_noi.src = 'sounds/yes_noi.mp3';
+
+
 </script>
+
+
 </head>
 <body>
-  <nav id="nav1">
-    <a href="#" onmousedown="bleep.play()">Home</a>
-    <a href="#" onmousedown="bleep.play()">About Us</a>
-    <a href="#" onmousedown="bleep.play()">Services</a>
-    <a href="#" onmousedown="bleep.play()">Contact</a>
-  </nav>
+
+  <div class="wrapper">
+  <div onmousedown="ket.play()" class="box">Ket</div>
+  <div onmousedown="belter.play()" class="box">Belter</div>
+  <div onmousedown="biggie.play()" class="box">Biggie</div>
+  <div onmousedown="biggie_shag.play()" class="box">Biggie Shag</div>
+  <div onmousedown="bludclat_breakfast.play()" class="box">Bludclat Breakfast</div>
+  <div onmousedown="chubs_out.play()" class="box">Chubs Out</div>
+  <div onmousedown="cmon.play()" class="box">C'MON</div>
+  <div onmousedown="fack_off.play()" class="box">Fack Off</div>
+  <div onmousedown="hahahaa.play()" class="box">Hahahaa</div>
+  <div onmousedown="heuuheuheuheu.play()" class="box">Heuu Heu Heu Heu</div>
+  <div onmousedown="jhus.play()" class="box">J-HUS</div>
+  <div onmousedown="lost_in_music.play()" class="box">Lost In Music</div>
+  <div onmousedown="my_g.play()" class="box">My G</div>
+  <div onmousedown="my_tits.play()" class="box">My Tits</div>
+  <div onmousedown="neeow.play()" class="box">Neeow</div>
+  <div onmousedown="nice_one.play()" class="box">Nice One</div>
+  <div onmousedown="oh_my_days.play()" class="box">Oh My Days</div>
+  <div onmousedown="oh_my_god.play()" class="box">Oh My God</div>
+  <div onmousedown="rap.play()" class="box">Rap</div>
+  <div onmousedown="thanks_mate.play()" class="box">Thanks Mate</div>
+  <div onmousedown="the_streets.play()" class="box">The Streets</div>
+  <div onmousedown="thirsty_thursdays.play()" class="box">Thirsty Thursdays</div>
+  <div onmousedown="wadupp.play()" class="box">Wadupp</div>
+  <div onmousedown="wagwarn.play()" class="box">Wagwarn</div>
+  <div onmousedown="yes_noi.play()" class="box">Yes Noi</div>
+
+
+
+
+
+</div>
 </body>
+
 </html>
+
