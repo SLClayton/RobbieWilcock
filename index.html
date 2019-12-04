@@ -29,6 +29,7 @@ body {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-gap: 15px;
+  padding: 20px;
   background-color: #fff;
   color: #444;
 }
@@ -41,6 +42,7 @@ body {
   padding: 10px;
   text-align: center;
   height: 100px;
+  line-height: 100px;
 }
 
 .box:hover { background: #595959; }
@@ -113,8 +115,8 @@ oh_my_days.src = 'sounds/oh_my_days.mp3';
 var oh_my_god = new Audio();
 oh_my_god.src = 'sounds/oh_my_god.mp3';
 
-var rap = new Audio();
-rap.src = 'sounds/rap.mp3';
+var aj_tracey = new Audio();
+aj_tracey.src = 'sounds/aj_tracey.mp3';
 
 var thanks_mate = new Audio();
 thanks_mate.src = 'sounds/thanks_mate.mp3';
@@ -143,6 +145,8 @@ yes_noi.src = 'sounds/yes_noi.mp3';
 
   <div class="wrapper">
   
+
+  <div onmousedown="aj_tracey.play()" class="box">AJ Tracey</div>
   <div onmousedown="belter.play()" class="box">Belter</div>
   <div onmousedown="biggie.play()" class="box">Biggie</div>
   <div onmousedown="biggie_shag.play()" class="box">Biggie Shag</div>
@@ -162,7 +166,6 @@ yes_noi.src = 'sounds/yes_noi.mp3';
   <div onmousedown="nice_one.play()" class="box">Nice One</div>
   <div onmousedown="oh_my_days.play()" class="box">Oh My Days</div>
   <div onmousedown="oh_my_god.play()" class="box">Oh My God</div>
-  <div onmousedown="rap.play()" class="box">Rap</div>
   <div onmousedown="thanks_mate.play()" class="box">Thanks Mate</div>
   <div onmousedown="the_streets.play()" class="box">The Streets</div>
   <div onmousedown="thirsty_thursdays.play()" class="box">Thirsty Thursdays</div>
