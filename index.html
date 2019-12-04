@@ -37,13 +37,14 @@ body {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
   font-size: 150%;
+  padding: 10px;
   text-align: center;
+  height: 100px;
 }
 
-.box:hover { background: #BBEA00; }
-.box:active { background: #EEFFA8; }
+.box:hover { background: #595959; }
+.box:active { background: #8c8c8c; }
 
 </style>
 
@@ -69,6 +70,9 @@ bludclat_breakfast.src = 'sounds/bludclat_breakfast.mp3';
 
 var chubs_out = new Audio();
 chubs_out.src = 'sounds/chubs_out.mp3';
+
+var celery = new Audio();
+celery.src = 'sounds/celery.mp3';
 
 var cmon = new Audio();
 cmon.src = 'sounds/cmon.mp3';
@@ -138,17 +142,19 @@ yes_noi.src = 'sounds/yes_noi.mp3';
 <body>
 
   <div class="wrapper">
-  <div onmousedown="ket.play()" class="box">Ket</div>
+  
   <div onmousedown="belter.play()" class="box">Belter</div>
   <div onmousedown="biggie.play()" class="box">Biggie</div>
   <div onmousedown="biggie_shag.play()" class="box">Biggie Shag</div>
   <div onmousedown="bludclat_breakfast.play()" class="box">Bludclat Breakfast</div>
+  <div onmousedown="celery.play()" class="box">Celery</div>
   <div onmousedown="chubs_out.play()" class="box">Chubs Out</div>
   <div onmousedown="cmon.play()" class="box">C'MON</div>
   <div onmousedown="fack_off.play()" class="box">Fack Off</div>
   <div onmousedown="hahahaa.play()" class="box">Hahahaa</div>
   <div onmousedown="heuuheuheuheu.play()" class="box">Heuu Heu Heu Heu</div>
   <div onmousedown="jhus.play()" class="box">J-HUS</div>
+  <div onmousedown="ket.play()" class="box">Ket</div>
   <div onmousedown="lost_in_music.play()" class="box">Lost In Music</div>
   <div onmousedown="my_g.play()" class="box">My G</div>
   <div onmousedown="my_tits.play()" class="box">My Tits</div>
