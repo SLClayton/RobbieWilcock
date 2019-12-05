@@ -24,7 +24,51 @@ body {
   margin: auto;
 }
 
-.wrapper {
+.score_grid {
+  display: grid;
+  grid-template-columns: 230px 200px 230px;
+  border-radius: 30px;
+  background-color: #034694;
+  color: #444;
+}
+
+.match_box {
+  color: #fff;
+  font-size: 70%;
+  text-align: center;
+  margin-top: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.left_team_box {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 180%;
+  text-align: right;
+  height: 100px;
+  line-height: 100px;
+}
+
+.right_team_box {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 180%;
+  text-align: left;
+  height: 100px;
+  line-height: 100px;
+}
+
+.score_box {
+  color: #fff;
+  border-radius: 5px;
+  font-size: 200%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+
+.grid_wrapper {
   margin: auto;
   display: grid;
   grid-template-columns: 200px 200px 200px;
@@ -47,6 +91,13 @@ body {
 
 .box:hover { background: #595959; }
 .box:active { background: #8c8c8c; }
+
+.top_pic {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  max-width: 100%;
+}
 
 </style>
 
@@ -141,43 +192,50 @@ yes_noi.src = 'sounds/yes_noi.mp3';
 
 
 </head>
+
+<img src="bob_doll.png" alt="Girl in a jacket" class="top_pic">
+
 <body>
 
-  <div class="wrapper">
-  
+	<div class="score_grid">
+		<div></div>
+		<div class="match_box">Sunday 15th - STamford bridge</div>
+		<div></div>
+		<div class="left_team_box">Chelsea</div>
+		<div class="score_box">1 - 6</div>
+		<div class="right_team_box">Man Utd</div>
 
-  <div onmousedown="aj_tracey.play()" class="box">AJ Tracey</div>
-  <div onmousedown="belter.play()" class="box">Belter</div>
-  <div onmousedown="biggie.play()" class="box">Biggie</div>
-  <div onmousedown="biggie_shag.play()" class="box">Biggie Shag</div>
-  <div onmousedown="bludclat_breakfast.play()" class="box">Bludclat Breakfast</div>
-  <div onmousedown="celery.play()" class="box">Celery</div>
-  <div onmousedown="chubs_out.play()" class="box">Chubs Out</div>
-  <div onmousedown="cmon.play()" class="box">C'MON</div>
-  <div onmousedown="fack_off.play()" class="box">Fack Off</div>
-  <div onmousedown="hahahaa.play()" class="box">Hahahaa</div>
-  <div onmousedown="heuuheuheuheu.play()" class="box">Heuu Heu Heu Heu</div>
-  <div onmousedown="jhus.play()" class="box">J-HUS</div>
-  <div onmousedown="ket.play()" class="box">Ket</div>
-  <div onmousedown="lost_in_music.play()" class="box">Lost In Music</div>
-  <div onmousedown="my_g.play()" class="box">My G</div>
-  <div onmousedown="my_tits.play()" class="box">My Tits</div>
-  <div onmousedown="neeow.play()" class="box">Neeow</div>
-  <div onmousedown="nice_one.play()" class="box">Nice One</div>
-  <div onmousedown="oh_my_days.play()" class="box">Oh My Days</div>
-  <div onmousedown="oh_my_god.play()" class="box">Oh My God</div>
-  <div onmousedown="thanks_mate.play()" class="box">Thanks Mate</div>
-  <div onmousedown="the_streets.play()" class="box">The Streets</div>
-  <div onmousedown="thirsty_thursdays.play()" class="box">Thirsty Thursdays</div>
-  <div onmousedown="wadupp.play()" class="box">Wadupp</div>
-  <div onmousedown="wagwarn.play()" class="box">Wagwarn</div>
-  <div onmousedown="yes_noi.play()" class="box">Yes Noi</div>
+	</div>
 
+	<div class="grid_wrapper">
+		<div onmousedown="aj_tracey.play()" class="box">AJ Tracey</div>
+		<div onmousedown="belter.play()" class="box">Belter</div>
+		<div onmousedown="biggie.play()" class="box">Biggie</div>
+		<div onmousedown="biggie_shag.play()" class="box">Biggie Shag</div>
+		<div onmousedown="bludclat_breakfast.play()" class="box">Bludclat Breakfast</div>
+		<div onmousedown="celery.play()" class="box">Celery</div>
+		<div onmousedown="chubs_out.play()" class="box">Chubs Out</div>
+		<div onmousedown="cmon.play()" class="box">C'MON</div>
+		<div onmousedown="fack_off.play()" class="box">Fack Off</div>
+		<div onmousedown="hahahaa.play()" class="box">Hahahaa</div>
+		<div onmousedown="heuuheuheuheu.play()" class="box">Heuu Heu Heu Heu</div>
+		<div onmousedown="jhus.play()" class="box">J-HUS</div>
+		<div onmousedown="ket.play()" class="box">Ket</div>
+		<div onmousedown="lost_in_music.play()" class="box">Lost In Music</div>
+		<div onmousedown="my_g.play()" class="box">My G</div>
+		<div onmousedown="my_tits.play()" class="box">My Tits</div>
+		<div onmousedown="neeow.play()" class="box">Neeow</div>
+		<div onmousedown="nice_one.play()" class="box">Nice One</div>
+		<div onmousedown="oh_my_days.play()" class="box">Oh My Days</div>
+		<div onmousedown="oh_my_god.play()" class="box">Oh My God</div>
+		<div onmousedown="thanks_mate.play()" class="box">Thanks Mate</div>
+		<div onmousedown="the_streets.play()" class="box">The Streets</div>
+		<div onmousedown="thirsty_thursdays.play()" class="box">Thirsty Thursdays</div>
+		<div onmousedown="wadupp.play()" class="box">Wadupp</div>
+		<div onmousedown="wagwarn.play()" class="box">Wagwarn</div>
+		<div onmousedown="yes_noi.play()" class="box">Yes Noi</div>
+	</div>
 
-
-
-
-</div>
 </body>
 
 </html>
